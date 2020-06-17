@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7141" started-at="2020-06-17T14:09:57Z" finished-at="2020-06-17T14:10:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7141" started-at="2020-06-17T14:09:57Z" finished-at="2020-06-17T14:10:05Z">
+      <class name="PlacesAPI.AddPlace">
+        <test-method status="PASS" signature="addPlace()[pri:0, instance:PlacesAPI.AddPlace@5f341870]" name="addPlace" duration-ms="6101" started-at="2020-06-17T14:09:57Z" finished-at="2020-06-17T14:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPlace -->
+      </class> <!-- PlacesAPI.AddPlace -->
+      <class name="PlacesAPI.GetPlace">
+        <test-method status="PASS" signature="getPlace()[pri:0, instance:PlacesAPI.GetPlace@553f17c]" name="getPlace" duration-ms="388" started-at="2020-06-17T14:10:04Z" finished-at="2020-06-17T14:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPlace -->
+      </class> <!-- PlacesAPI.GetPlace -->
+      <class name="PlacesAPI.DeletePlace">
+        <test-method status="PASS" signature="deletePlace()[pri:0, instance:PlacesAPI.DeletePlace@271053e1]" name="deletePlace" duration-ms="308" started-at="2020-06-17T14:10:04Z" finished-at="2020-06-17T14:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePlace -->
+      </class> <!-- PlacesAPI.DeletePlace -->
+      <class name="PlacesAPI.UpdatePlace">
+        <test-method status="PASS" signature="updatePlace()[pri:0, instance:PlacesAPI.UpdatePlace@4f7d0008]" name="updatePlace" duration-ms="287" started-at="2020-06-17T14:10:04Z" finished-at="2020-06-17T14:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePlace -->
+      </class> <!-- PlacesAPI.UpdatePlace -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

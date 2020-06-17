@@ -1,0 +1,179 @@
+[RemoteTestNG] detected TestNG version 6.14.3
+{
+  "location": {
+    "lat": -73.1630494,
+    "lng": 19.2179472
+  },
+  "accuracy": 50,
+  "name": "Snehal M",
+  "phone_number": "(+91) 234123112",
+  "address": "Test@123 AZDNGR, USA, 123456",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
+
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+  "location": {
+    "lat": -73.1630494,
+    "lng": 19.2179472
+  },
+  "accuracy": 50,
+  "name": "Snehal M",
+  "phone_number": "(+91) 234123112",
+  "address": "Test@123 AZDNGR, USA, 123456",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Jun 2020 14:04:34 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "53f8b22572251750375645986e63c689",
+    "scope": "APP",
+    "reference": "08574c7996718e7b2cae224a2f776d7f08574c7996718e7b2cae224a2f776d7f",
+    "id": "08574c7996718e7b2cae224a2f776d7f"
+}
+RESPONSE from the ADD Place API ---------->{"status":"OK","place_id":"53f8b22572251750375645986e63c689","scope":"APP","reference":"08574c7996718e7b2cae224a2f776d7f08574c7996718e7b2cae224a2f776d7f","id":"08574c7996718e7b2cae224a2f776d7f"}
+Place ID = 53f8b22572251750375645986e63c689
+Getting palce_id :53f8b22572251750375645986e63c689
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=53f8b22572251750375645986e63c689
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=53f8b22572251750375645986e63c689
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 17 Jun 2020 14:04:36 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 252
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-73.1630494",
+        "longitude": "19.2179472"
+    },
+    "accuracy": "50",
+    "name": "Snehal M",
+    "phone_number": "(+91) 234123112",
+    "address": "Test@123 AZDNGR, USA, 123456",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "French-IN"
+}
+RESPONSE from the GET Place API ---------->{"location":{"latitude":"-73.1630494","longitude":"19.2179472"},"accuracy":"50","name":"Snehal M","phone_number":"(+91) 234123112","address":"Test@123 AZDNGR, USA, 123456","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Request method:	PUT
+Request URI:	https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123&place_id=53f8b22572251750375645986e63c689
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=53f8b22572251750375645986e63c689
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+"place_id":"53f8b22572251750375645986e63c689",
+"address":"70 winter walk SNEHAL, USA",
+"key":"qaclick123"
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Jun 2020 14:04:36 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 38
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Address successfully updated"
+}
+RESPONSE from the UPDATE Place API ---------->{"msg":"Address successfully updated"}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&place_id=53f8b22572251750375645986e63c689
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=53f8b22572251750375645986e63c689
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id":"53f8b22572251750375645986e63c689" 
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Jun 2020 14:04:36 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
+RESPONSE from the DELETE Place API ---------->{"status":"OK"}
+
+===============================================
+Suite
+Total tests run: 4, Failures: 0, Skips: 0
+===============================================
+

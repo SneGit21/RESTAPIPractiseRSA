@@ -1,25 +1,35 @@
 package PlacesAPI;
 
+import static org.hamcrest.Matchers.equalTo;
+
+import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
 public class DeletePlace {
-	public static void main(String[] args) {
+	
+	@Test
+	public void deletePlace() {
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		
-		given()
+		String res =
+		given().log().all()
 		.queryParam("key", "qaclick123")
-		.queryParam("place_id", "f7ae34f2713f973ce610bd44aa6efa12")
+		.queryParam("place_id", Payload.getPlaceid())
 		.body("{\r\n" + 
-				"    \"place_id\":\"928b51f64aed18713b0d164d9be8d67f\" \r\n" + 
+				"    \"place_id\":\""+Payload.getPlaceid()+"\" \r\n" + 
 				"}\r\n" + 
 				"")
 		.when()
 		.post("/maps/api/place/delete/json")
 		.then()
-		//.assertThat()
-		//.statusCode(200)
-		.log().all();
+		.assertThat()
+		.body("status", equalTo("OK"))
+		.log().all().extract().response().asString();
+		
+		System.out.println("RESPONSE from the DELETE Place API ---------->"+res);
 	}
 }
