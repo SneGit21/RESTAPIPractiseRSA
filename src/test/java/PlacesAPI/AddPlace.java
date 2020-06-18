@@ -40,8 +40,7 @@ public class AddPlace {
 		
 		System.out.println("RESPONSE from the ADD Place API ---------->"+res);
 		
-		JsonPath js = new JsonPath(res);
-		String placeid = js.get("place_id");
+		String placeid = ReusableMethods.rawToJson(res).get("place_id");
 		System.out.println("Place ID = "+placeid);
 		
 		//Setting placeid
